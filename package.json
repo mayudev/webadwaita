@@ -19,7 +19,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "lit": "^2.6.1"
+    "lit": "^2.6.1",
+    "sass": "^1.58.3"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
