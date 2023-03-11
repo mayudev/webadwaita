@@ -1,0 +1,36 @@
+@import "global.scss";
+
+.adw-entry {
+  background: $default3;
+  border-radius: $button-radius;
+  font: inherit;
+  color: white;
+  outline: none;
+
+  padding-left: 8px;
+  padding-right: 8px;
+
+  min-height: 34px;
+
+  border: 2px solid;
+  border-color: transparent;
+
+  transition: all 200ms $ease-out-quad;
+
+  &:focus {
+    border-color: $blue2;
+  }
+
+  &:disabled {
+    // TODO
+    opacity: 0.7;
+  }
+}
+
+.adw-entry-flat {
+  min-height: 0;
+  padding: 2px;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
+}

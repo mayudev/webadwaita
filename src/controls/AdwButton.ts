@@ -38,3 +38,9 @@ export default class AdwButton extends LitElement {
     </button>`;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "adw-button": AdwButton;
+  }
+}
