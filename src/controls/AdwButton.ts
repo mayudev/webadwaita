@@ -20,6 +20,9 @@ export default class AdwButton extends LitElement {
   @property({ type: Boolean })
   pill: boolean = false;
 
+  @property({ type: Boolean })
+  flat: boolean = false;
+
   protected render() {
     const classes = {
       "adw-button": true,
@@ -27,6 +30,7 @@ export default class AdwButton extends LitElement {
       "adw-button-circular": this.circular,
       "adw-button-danger": this.danger,
       "adw-button-pill": this.pill,
+      "adw-button-flat": this.flat,
     };
 
     return html`<button class=${classMap(classes)}>
