@@ -1,15 +1,11 @@
 import { html } from "lit-html";
-import "../controls/AdwEntry.ts";
+import "../style.scss";
 
 export default {
   title: "Components/Forms/Entry",
-  component: "adw-entry",
 };
 
-export const Regular = () => html`<div>
-  <adw-entry placeholder="Entry"></adw-entry>
-</div>`;
-
-export const Disabled = () => html`<div>
-  <adw-entry disabled></adw-entry>
+export const Entry = () => html`<div>
+  <input type="text" class="adw-entry" placeholder="Entry" />
+  <input type="text" class="adw-entry" disabled placeholder="Disabled entry" />
 </div>`;

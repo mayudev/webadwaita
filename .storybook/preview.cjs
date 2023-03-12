@@ -9,9 +9,8 @@ export const parameters = {
     },
   },
   darkMode: {
-    // Override the default dark theme
+    classTarget: "html",
     dark: { ...themes.dark, appBg: "black" },
-    // Override the default light theme
     light: { ...themes.normal, appBg: "white" },
     darkClass: "adw-dark",
     lightClass: "adw-default",
