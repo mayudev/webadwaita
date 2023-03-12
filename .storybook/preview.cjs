@@ -10,8 +10,8 @@ export const parameters = {
   },
   darkMode: {
     classTarget: "html",
-    dark: { ...themes.dark, appBg: "black" },
-    light: { ...themes.normal, appBg: "white" },
+    dark: { ...themes.dark, appBg: "#303030", appContentBg: "#242424" },
+    light: { ...themes.normal, appBg: "#ebebeb", appContentBg: "#fafafa" },
     darkClass: "adw-dark",
     lightClass: "adw-default",
     stylePreview: true,

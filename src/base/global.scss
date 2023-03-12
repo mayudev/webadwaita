@@ -8,9 +8,24 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-size: 16px;
 
   // Variables for light theme
-  --adw-foreground: white;
+  --adw-bg-window: #fafafa;
+  --adw-bg-view: #ffffff;
+  --adw-bg-header: #ebebeb;
+  --adw-bg-el: #e6e6e6;
+  --adw-bg-el-hover: #dcdcdc;
+  --adw-bg-el-active: #bebebe;
+
+  --adw-foreground: rgba(0, 0, 0, 0.8);
 }
 
 // Variables for dark theme
 :root.adw-dark {
+  --adw-bg-window: #242424;
+  --adw-bg-view: #1e1e1e;
+  --adw-bg-header: #303030;
+  --adw-bg-el: #3a3a3a;
+  --adw-bg-el-hover: #4a4a4a;
+  --adw-bg-el-active: #6a6a6a;
+
+  --adw-foreground: white;
 }
