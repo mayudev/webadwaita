@@ -18,6 +18,10 @@
   &:active {
     background: var(--adw-bg-el-active);
   }
+
+  &:focus-visible {
+    outline: $focus-outline;
+  }
 }
 
 .adw-button-primary {
