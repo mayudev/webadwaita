@@ -1,5 +1,5 @@
 import { html } from "lit-html";
-import "../style.scss";
+import "../../style.scss";
 
 export default {
   title: "Components/Display/Typography",

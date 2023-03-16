@@ -1,0 +1,51 @@
+:root {
+  .adw-success {
+    --adw-bg-header: #e4eee9;
+    --adw-bg-window: #2ec27e;
+    --adw-foreground: #26a269;
+
+    color: var(--adw-foreground);
+  }
+
+  .adw-destructive {
+    --adw-bg-header: #f4e4e5;
+    --adw-bg-window: #e01b24;
+    --adw-foreground: #c01c28;
+
+    color: var(--adw-foreground);
+  }
+
+  .adw-warning {
+    --adw-bg-header: #f1ece1;
+    --adw-bg-window: #e5a50a;
+    --adw-foreground: #ae7b03;
+
+    color: var(--adw-foreground);
+  }
+}
+
+:root.adw-dark {
+  .adw-success {
+    --adw-bg-header: #2f3831;
+    --adw-bg-window: #26a269;
+    --adw-foreground: #8ff0a4;
+
+    color: var(--adw-foreground);
+  }
+
+  .adw-destructive {
+    --adw-bg-header: #3a2d2a;
+    --adw-bg-window: #c01c28;
+    --adw-foreground: #ff7b63;
+
+    color: var(--adw-foreground);
+  }
+
+  .adw-warning {
+    --adw-bg-header: #39372a;
+    --adw-bg-window: #cd9309;
+    --adw-foreground: #f8e45c;
+
+    color: var(--adw-foreground);
+  }
+}
