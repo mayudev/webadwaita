@@ -1,16 +1,16 @@
 import { html } from "lit-html";
-import "../components/AdwLabel.ts";
+import "../style.scss";
 
 export default {
-  title: "Components/Display/Label",
-  component: "adw-label",
+  title: "Components/Display/Typography",
 };
 
-export const Default = () => html`<div>
-  <adw-label kind="h1">Title 1</adw-label>
-  <adw-label kind="h2">Title 2</adw-label>
-  <adw-label kind="h3">Title 3</adw-label>
-  <adw-label kind="h4">Title 4</adw-label>
-  <adw-label kind="heading">Heading</adw-label>
-  <adw-label>Regular text</adw-label>
+export const Typography = () => html`<div>
+  <h1>Title 1</h1>
+  <h2>Title 2</h2>
+  <h3>Title 3</h3>
+  <h4>Title 4</h4>
+  <p class="adw-heading">Heading</p>
+  <p class="adw-body">Regular text</p>
+  <div class="adw-title-1">Title 1 (alternative)</div>
 </div>`;

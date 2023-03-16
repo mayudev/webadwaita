@@ -1,29 +1,32 @@
-@import "global.scss";
-
 .adw-button {
   font: inherit;
   border: none;
   outline: none;
 
-  color: white;
+  color: var(--adw-foreground);
   font-weight: 700;
   padding: 10px 20px;
   border-radius: $button-radius;
   transition: 200ms $ease-out-quad;
 
-  background: $default3;
+  background: var(--adw-bg-el);
 
   &:hover {
-    background: $default4;
+    background: var(--adw-bg-el-hover);
   }
 
   &:active {
-    background: $default5;
+    background: var(--adw-bg-el-active);
+  }
+
+  &:focus-visible {
+    outline: $focus-outline;
   }
 }
 
 .adw-button-primary {
   background: $blue4;
+  color: white;
 
   &:hover {
     background: $blue3;
@@ -36,6 +39,7 @@
 
 .adw-button-danger {
   background: $red4;
+  color: white;
 
   &:hover {
     background: $red3;
@@ -64,5 +68,7 @@
 }
 
 .adw-button-flat {
+  color: var(--adw-foreground);
+
   background: transparent;
 }

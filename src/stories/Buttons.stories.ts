@@ -1,39 +1,19 @@
-import "../controls/AdwButton.ts";
 import { html } from "lit-html";
+import "../style.scss";
 
 export default {
   title: "Components/Actions/Button",
-  component: "adw-button",
-  argTypes: {
-    primary: Boolean,
-    danger: Boolean,
-  },
-  args: {
-    primary: false,
-    danger: false,
-  },
 };
 
-const Template = ({ primary, danger, flat }: any) =>
+export const Button = () =>
   html`<div>
-    <adw-button .primary=${primary} .danger=${danger} .flat=${flat}>Button</adw-button>
-
-    <adw-button .primary=${primary} .danger=${danger} .flat=${flat} pill
-      >Button</adw-button
-    >
-
-    <adw-button .primary=${primary} .danger=${danger} .flat=${flat} circular>
+    <button class="adw-button">Button</button>
+    <button class="adw-button adw-button-primary">Button</button>
+    <button class="adw-button adw-button-danger">Button</button>
+    <button class="adw-button adw-button-flat">Button</button>
+    <button class="adw-button adw-button-circular">
       <span class="material-icons">add</span>
-    </adw-button>
+    </button>
+    <button class="adw-button adw-button-pill">Button</button>
+    <button class="adw-button adw-button-primary adw-button-pill">Button</button>
   </div>`;
-
-export const Default = Template.bind({});
-
-export const Primary = Template.bind({});
-Primary.args = { primary: true };
-
-export const Danger = Template.bind({});
-Danger.args = { danger: true };
-
-export const Flat = Template.bind({});
-Flat.args = { flat: true };
