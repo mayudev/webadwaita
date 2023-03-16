@@ -7,6 +7,7 @@ $focus-outline: $blue1 solid 2px;
 :root {
   font-family: "Cantarell", sans-serif;
   font-size: 16px;
+  color: var(--adw-foreground);
 
   // Variables for light theme
   --adw-bg-window: #fafafa;
@@ -17,6 +18,7 @@ $focus-outline: $blue1 solid 2px;
   --adw-bg-el-active: #bebebe;
 
   --adw-foreground: rgba(0, 0, 0, 0.8);
+  --adw-foreground-placeholder: #9b9b9b;
 }
 
 // Variables for dark theme
@@ -29,4 +31,5 @@ $focus-outline: $blue1 solid 2px;
   --adw-bg-el-active: #6a6a6a;
 
   --adw-foreground: white;
+  --adw-foreground-placeholder: #999999;
 }

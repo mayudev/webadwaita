@@ -1,8 +1,9 @@
 .adw-entry {
-  background: $default3;
+  background: var(--adw-bg-header);
+  color: var(--adw-foreground);
+
   border-radius: $button-radius;
   font: inherit;
-  color: white;
   outline: none;
 
   padding-left: 8px;
@@ -23,6 +24,11 @@
     // TODO
     opacity: 0.7;
   }
+}
+
+.adw-entry::placeholder {
+  color: var(--adw-foreground-placeholder);
+  opacity: 1;
 }
 
 .adw-entry-flat {
